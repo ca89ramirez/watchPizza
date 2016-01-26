@@ -117,11 +117,34 @@
                 <controller identifier="confirmarID" hidesWhenLoading="NO" id="rm2-r3-X19" customClass="confirmarInterfaceController" customModule="WatchApp_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Confirmar" id="D8l-UW-HbT"/>
-                        <label width="136" height="77" alignment="left" text="Label" id="25T-9s-2j2"/>
+                        <label width="136" height="32" alignment="left" text="Label" id="25T-9s-2j2"/>
+                        <label alignment="left" text="Label" id="egg-lx-k0F"/>
+                        <label alignment="left" text="Label" id="wrr-7M-9Pn"/>
+                        <label alignment="left" text="Label" id="Lt2-U3-LGK"/>
+                        <group width="1" alignment="left" id="rbH-CP-KBQ">
+                            <items>
+                                <button width="63" alignment="left" title="Si" id="aJt-uB-sj1">
+                                    <connections>
+                                        <segue destination="e29-cm-S42" kind="push" id="o45-OV-p1o"/>
+                                    </connections>
+                                </button>
+                                <button width="61" alignment="left" title="No" id="xPY-FO-ATj">
+                                    <connections>
+                                        <segue destination="TNP-hZ-loD" kind="push" id="EiF-6R-Pm3"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="confirmarLabel" destination="25T-9s-2j2" id="Y1Q-bh-EVV"/>
+                        <outlet property="confirmarLabel2" destination="egg-lx-k0F" id="gvq-nL-doI"/>
+                        <outlet property="confirmarLabel3" destination="wrr-7M-9Pn" id="GvS-Oz-4pB"/>
+                        <outlet property="confirmarLabel4" destination="Lt2-U3-LGK" id="9yf-Be-Vpd"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="567" y="611"/>
+            <point key="canvasLocation" x="567" y="610.5"/>
         </scene>
         <!--ingredientesID-->
         <scene sceneID="4jx-k0-Dbi">
@@ -193,6 +216,50 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="812" y="296"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="a7X-wJ-Xu5">
+            <objects>
+                <controller hidesWhenLoading="NO" id="e29-cm-S42">
+                    <items>
+                        <label height="61" alignment="left" text="Tu Pizza esta en " id="rsu-rC-a64"/>
+                        <label alignment="left" text="camino" id="2lc-fa-m5e"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="841" y="879"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="ys3-lO-Z2k">
+            <objects>
+                <controller hidesWhenLoading="NO" id="TNP-hZ-loD">
+                    <items>
+                        <label alignment="left" text="¿Elegir de nuevo?" id="Mo4-qi-of9"/>
+                        <button width="1" alignment="left" title="Si" id="rSq-49-UYC">
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="HfB-os-fbH"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="No" id="sAP-Kq-mMT">
+                            <connections>
+                                <segue destination="gZo-fI-tuq" kind="push" id="gLC-QL-QKT"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="270" y="727"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="AWK-Qi-Ol2">
+            <objects>
+                <controller hidesWhenLoading="NO" id="gZo-fI-tuq">
+                    <items>
+                        <label alignment="left" text="Hasta la próxima" id="F2r-2s-Tdc"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="265" y="929"/>
         </scene>
     </scenes>
 </document>

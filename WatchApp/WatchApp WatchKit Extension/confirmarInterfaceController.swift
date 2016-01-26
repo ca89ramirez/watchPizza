@@ -11,17 +11,34 @@ import Foundation
 
 
 class confirmarInterfaceController: WKInterfaceController {
-    var ingredientesTipo:String=""
+    var ingredientesT:String=""
     var pru:String=""
     var pru2:String=""
     var pru3:String=""
+    //var pedido:String=""
 
+    @IBOutlet var confirmarLabel: WKInterfaceLabel!
+    
+    @IBOutlet var confirmarLabel2: WKInterfaceLabel!
+    
+    @IBOutlet var confirmarLabel3: WKInterfaceLabel!
+    
+    @IBOutlet var confirmarLabel4: WKInterfaceLabel!
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        let c=context as! queso
-        pru = String(c.cheese)
+        let c=context as! ingredientes
+        pru = String(c.quesoTipo)
         pru2=String(c.masaTipo)
         pru3=String(c.tamanoTipo)
+        ingredientesT=String(c.ingredientesTipo)
+        //pedido += pru
+        //pedido += pru2
+       // pedido += pru3
+       // pedido += ingredientesTipo
+        confirmarLabel.setText(pru)
+        confirmarLabel2.setText(pru2)
+        confirmarLabel3.setText(pru3)
+        confirmarLabel4.setText(ingredientesT)
         
         // Configure interface objects here.
     }
