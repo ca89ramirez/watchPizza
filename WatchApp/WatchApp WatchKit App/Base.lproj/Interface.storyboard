@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14F1509" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Tamaño" id="oik-lX-w0d"/>
+                        <button width="1" alignment="left" title="Chica" id="XAw-Y3-OQc">
+                            <connections>
+                                <action selector="chooseSmall" destination="AgC-eL-Hgc" id="5cz-f0-sXj"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Mediana" id="uwl-rR-5Wl">
+                            <connections>
+                                <action selector="chooseMedium" destination="AgC-eL-Hgc" id="2dr-7P-Jrl"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Grande" id="pPm-sH-MuK">
+                            <connections>
+                                <action selector="chooseBig" destination="AgC-eL-Hgc" id="GGO-pR-hrM"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="elegir--&gt; masa" id="FGE-vi-S6H">
+                            <connections>
+                                <action selector="next" destination="AgC-eL-Hgc" id="TdW-Jh-LNj"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="medium" destination="uwl-rR-5Wl" id="zAO-lv-2Dq"/>
+                        <outlet property="next" destination="FGE-vi-S6H" id="dl5-oB-zMI"/>
+                        <outlet property="small" destination="XAw-Y3-OQc" id="FqP-HZ-dUO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="429" y="64.5"/>
+        </scene>
+        <!--masaID-->
+        <scene sceneID="lLB-Qp-b4p">
+            <objects>
+                <controller identifier="masaID" hidesWhenLoading="NO" id="ye4-Bs-xhl" customClass="masaInterfaceController" customModule="WatchApp_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Masa" id="rHh-Ou-v9N"/>
+                        <button width="1" alignment="left" title="Delgada" id="tIb-Hn-AXu">
+                            <connections>
+                                <action selector="delgada" destination="ye4-Bs-xhl" id="zdQ-3Q-U4v"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Crujiente" id="aXf-5t-U9e">
+                            <connections>
+                                <action selector="crujiente" destination="ye4-Bs-xhl" id="SLP-qY-5BM"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Gruesa" id="gIW-z0-zPX">
+                            <connections>
+                                <action selector="gruesa" destination="ye4-Bs-xhl" id="PxV-wU-ASc"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="elegir--&gt;Queso" id="Jcj-RO-qUu">
+                            <connections>
+                                <action selector="elegirQueso" destination="ye4-Bs-xhl" id="ovH-Dt-XeY"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="labele" destination="rHh-Ou-v9N" id="Lw5-WU-yOw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="464" y="337.5"/>
+        </scene>
+        <!--quesoID-->
+        <scene sceneID="DWk-dl-9Oj">
+            <objects>
+                <controller identifier="quesoID" hidesWhenLoading="NO" id="sTq-Ky-zvO" customClass="quesoInterfaceController" customModule="WatchApp_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Queso" id="rHf-qS-lmV"/>
+                        <button width="1" alignment="left" title="Cheddar" id="9Ou-pa-1qT">
+                            <connections>
+                                <action selector="cheddar" destination="sTq-Ky-zvO" id="fmN-YW-kYn"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Parmesano" id="WVw-ra-LbB">
+                            <connections>
+                                <action selector="parmesano" destination="sTq-Ky-zvO" id="kK6-zc-ugj"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Mozzrella" id="8Yg-Wv-t8c">
+                            <connections>
+                                <action selector="mozzarela" destination="sTq-Ky-zvO" id="mzw-qP-5Ms"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Sin queso" id="idb-Ml-dFT">
+                            <connections>
+                                <action selector="sinCheese" destination="sTq-Ky-zvO" id="QqG-qJ-mkq"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="elegir--&gt;Ingredientes" id="SeL-Z6-BVd">
+                            <connections>
+                                <action selector="elegirIngredientes" destination="sTq-Ky-zvO" id="thX-jI-hdt"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="638" y="334"/>
+        </scene>
+        <!--confirmarID-->
+        <scene sceneID="Doa-e9-1hY">
+            <objects>
+                <controller identifier="confirmarID" hidesWhenLoading="NO" id="rm2-r3-X19" customClass="confirmarInterfaceController" customModule="WatchApp_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Confirmar" id="D8l-UW-HbT"/>
+                        <label width="136" height="77" alignment="left" text="Label" id="25T-9s-2j2"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="567" y="611"/>
+        </scene>
+        <!--ingredientesID-->
+        <scene sceneID="4jx-k0-Dbi">
+            <objects>
+                <controller identifier="ingredientesID" hidesWhenLoading="NO" id="0no-Zy-9St" customClass="ingredientesInterfaceController" customModule="WatchApp_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Ingredientes" id="5lL-nw-GQ9"/>
+                        <group width="1" alignment="left" id="lC3-vP-s9W">
+                            <items>
+                                <button width="62" alignment="left" title="Jamón" id="EIe-ip-0zL">
+                                    <connections>
+                                        <action selector="jamon" destination="0no-Zy-9St" id="vwO-FD-FBE"/>
+                                    </connections>
+                                </button>
+                                <imageView width="39" height="36" alignment="left" image="check" contentMode="redraw" id="HdS-4R-dSY"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="GII-rv-hkY">
+                            <items>
+                                <button width="62" alignment="left" title="Pepero" id="tJh-7j-lId">
+                                    <connections>
+                                        <action selector="pepe" destination="0no-Zy-9St" id="5U4-Xj-Euj"/>
+                                    </connections>
+                                </button>
+                                <imageView width="41" height="37" alignment="left" image="check" id="BvD-fd-2VJ"/>
+                            </items>
+                        </group>
+                        <group width="127" height="34" alignment="left" id="ESO-m3-wO7">
+                            <items>
+                                <button width="62" alignment="left" title="Piña" id="lkc-w6-as1">
+                                    <connections>
+                                        <action selector="pina" destination="0no-Zy-9St" id="5Oh-BY-0CF"/>
+                                    </connections>
+                                </button>
+                                <imageView width="40" height="39" alignment="left" image="check" id="Eoz-nS-WSQ"/>
+                            </items>
+                        </group>
+                        <group width="133" height="39" alignment="left" id="ZsP-Ab-0fI">
+                            <items>
+                                <button width="66" alignment="left" title="Cebolla" id="yjN-DR-nJL">
+                                    <connections>
+                                        <action selector="cebolla" destination="0no-Zy-9St" id="JTl-bX-0Yb"/>
+                                    </connections>
+                                </button>
+                                <imageView width="43" height="41" alignment="left" image="check" id="b64-1l-bBB"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="BVK-SX-4Dk">
+                            <items>
+                                <button width="62" alignment="left" title="Salchi" id="qfJ-YI-Xnt">
+                                    <connections>
+                                        <action selector="salchichita" destination="0no-Zy-9St" id="A6h-ig-t6y"/>
+                                    </connections>
+                                </button>
+                                <imageView width="40" height="37" alignment="left" image="check" id="kjw-oS-Udn"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Confirmar" id="oOw-Z2-qgq">
+                            <connections>
+                                <action selector="confirmar" destination="0no-Zy-9St" id="LfF-8G-iIQ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="cebolla" destination="lkc-w6-as1" id="UcZ-bA-Gvy"/>
+                        <outlet property="checkpepe" destination="HdS-4R-dSY" id="ynF-XI-bws"/>
+                        <outlet property="pina" destination="yjN-DR-nJL" id="d3M-e8-lYe"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="812" y="296"/>
+        </scene>
+    </scenes>
+</document>
